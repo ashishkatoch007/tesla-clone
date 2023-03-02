@@ -31,7 +31,7 @@ const Wrap = styled.section`
     width: 100vh;
     height: 100vh;
     background: url('/images/model-3.jpg') no-repeat;
-    background-image: ${props => `url("/images/${props.bgImage}")`};
+    background-image: ${props => `url("/images/${props.bgImage}")`}; 
     background-size: cover;
     display: flex;
     flex-direction: column;
