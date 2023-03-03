@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+
+
 function Section({title,description,leftBtnText,rightBtnText, secBgImage}) {
     // console.log(props)
   return (
@@ -8,15 +10,17 @@ function Section({title,description,leftBtnText,rightBtnText, secBgImage}) {
           <ItemText>
             <h1>{title}</h1>
             <p>{description}</p>
-          </ItemText> 
+          </ItemText>
         <ButtonsWrap>
           <ButtonGroup>
                 <LeftButton>
                    {leftBtnText} 
                 </LeftButton>
-                <RightButton>
+                {rightBtnText &&     <RightButton>
                    {rightBtnText}
-                </RightButton>
+                </RightButton> 
+                }
+               
           </ButtonGroup>
           <DownArrow src="/images/down-arrow.svg"/>
         </ButtonsWrap>
@@ -28,11 +32,12 @@ function Section({title,description,leftBtnText,rightBtnText, secBgImage}) {
 export default Section
 
 const Wrap = styled.section`
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
     background: url('/images/model-3.jpg') no-repeat;
     background-image: ${props => `url("/images/${props.bgImage}")`}; 
     background-size: cover;
+    background-position: center center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -73,5 +78,5 @@ const DownArrow = styled.img`
 `
 
 const ButtonsWrap = styled.div`
-
+    
 `

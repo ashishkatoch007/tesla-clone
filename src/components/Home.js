@@ -40,6 +40,26 @@ function Home() {
             leftBtnText="Custom Order"
             rightBtnText="Existing Inventory"
             />
+            <Section 
+            title= "Lowest Cost Solar Panels in America"
+            description= "Money Back guaranty"
+            secBgImage="Solar-panel.jpg"
+            leftBtnText="Order Now"
+            rightBtnText="Learn More"
+            />
+             <Section 
+            title= "Solar Roof"
+            description= "Produce Clean Energy From Your Roof"
+            secBgImage="Solar-roof.jpg"
+            leftBtnText="Order Now"
+            rightBtnText="Learn More"
+            />
+            <Section 
+            title= "Accessories"
+           
+            secBgImage="accessories.jpg"
+            leftBtnText="Order Now"
+            />
         </Wrapper>
         
 
@@ -51,5 +71,5 @@ export default Home
 const Wrapper = styled.main`
   background: transparent;
   height: 100vh;
-  width: 100vh;
+  width: 100vw;
 `;
